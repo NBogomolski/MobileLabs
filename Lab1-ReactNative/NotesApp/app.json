@@ -1,0 +1,12 @@
+{
+   "expo": {
+        "name": "Todos",
+        "icon": "",
+        "version": "1.0.0",
+        "slug": "todos",
+        "ios": {
+            "bundleIdentifier": "by.bsuir.bogomolski",
+            "buildNumber": "1.0.0"
+        }
+   }
+}

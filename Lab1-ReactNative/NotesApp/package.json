@@ -1,0 +1,8 @@
+{
+    "dependencies": {
+        "expo": "^47.0.13",
+        "expo-cli": "^6.2.1",
+        "metro-core": "^0.75.0",
+        "react-native": "^0.70.5"
+    }
+}
