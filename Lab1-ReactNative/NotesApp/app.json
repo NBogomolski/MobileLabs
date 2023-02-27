@@ -1,12 +1,12 @@
 {
-   "expo": {
-        "name": "Todos",
+    "expo": {
+        "name": "Notes",
         "icon": "",
         "version": "1.0.0",
-        "slug": "todos",
+        "slug": "notes",
         "ios": {
             "bundleIdentifier": "by.bsuir.bogomolski",
             "buildNumber": "1.0.0"
         }
-   }
+    }
 }

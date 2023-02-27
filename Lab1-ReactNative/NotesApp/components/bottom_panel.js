@@ -8,23 +8,17 @@ import {
 } from "react-native";
 
 const secondaryColor = "#F5F1ED";
-const textSize = "22px";
+// const textSize = ;
 export const primaryColor = "#70798C";
-
 
 export default function BottomPanel() {
     return (
-        <SafeAreaView
-            style={{
-                position: "absolute",
-                bottom: 0,
-                backgroundColor: primaryColor,
-                height: "10%",
-                width: "100%",
-                // alignItems: "center",
-                justifyContent: "center",
-            }}
+        <View
+        style={{
+            
+        }}
         >
+            {/* <Text>Text</Text> */}
             <TouchableOpacity
                 style={{
                     position: "absolute",
@@ -38,25 +32,25 @@ export default function BottomPanel() {
                     justifyContent: "center",
                 }}
             >
-                <Button
+{                <Button
                     title="Add"
                     color="#828282"
                     style={{
-                        fontSize: textSize,
+                        // fontSize: textSize,
                         alignText: "center",
                     }}
-                />
+                />}
             </TouchableOpacity>
             <Text
                 style={{
                     position: "absolute",
                     left: 10,
-                    fontSize: textSize,
+                    // fontSize: textSize,
                     color: secondaryColor,
                 }}
             >
                 0 notes
             </Text>
-        </SafeAreaView>
+        </View>
     );
 }
