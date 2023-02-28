@@ -23,12 +23,11 @@ export default function App() {
                     component={Home}
                     name="Home"
                     options={{
-                        headerTitle: () => <Text>hello world</Text>,
+                        headerTitle: () => <Text>YourAppName</Text>,
                     }}
-                    
                 />
-                <Stack.Screen
-                    component={Note}
+                <Stack.Screen 
+                    component={Note} 
                     name="Note"
                 />
             </Stack.Navigator>
