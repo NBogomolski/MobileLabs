@@ -1,0 +1,45 @@
+{
+  "expo": {
+      "name": "QR Code Scanner",
+      "slug": "qrcode",
+      "version": "1.0.0",
+      "orientation": "portrait",
+      "icon": "./assets/icon.png",
+      "userInterfaceStyle": "light",
+      "splash": {
+          "image": "./assets/splash.png",
+          "resizeMode": "contain",
+          "backgroundColor": "#ffffff"
+      },
+      "updates": {
+          "fallbackToCacheTimeout": 0
+      },
+      "assetBundlePatterns": ["**/*"],
+      "ios": {
+          "supportsTablet": true
+      },
+      "android": {
+          "adaptiveIcon": {
+              "foregroundImage": "./assets/adaptive-icon.png",
+              "backgroundColor": "#FFFFFF"
+          },
+          "package": "com.annakuk.qrc0"
+      },
+      "web": {
+          "favicon": "./assets/favicon.png"
+      },
+      "extra": {
+          "eas": {
+              "projectId": "9a5e6baf-b523-4077-b40f-3ae85be1b154"
+          }
+      },
+      "plugins": [
+          [
+              "expo-barcode-scanner",
+              {
+                  "cameraPermission": "Allow QR-Code scanner to access camera."
+              }
+          ]
+      ]
+  }
+}
