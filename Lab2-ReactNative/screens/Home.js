@@ -20,17 +20,6 @@ export default function Home(){
             >
                 <Text style={styles.text}>Generate QR-code</Text>
             </TouchableOpacity>
-{/*             <Button
-                color="#007AFF"
-                title="Scan QR-code"
-                onPress={() => navigation.navigate("Scanner")}
-            />
-            <Button
-                color="#007AFF"
-                title="Create QR-code"
-                onPress={() => navigation.navigate("Generator")}
-            /> */}
-            {/* </ImageBackground> */}
         </View>
     );
 }
