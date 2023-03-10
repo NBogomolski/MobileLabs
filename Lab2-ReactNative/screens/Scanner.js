@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import { StyleSheet, Text, View, Button, Linking, Dimensions, TouchableOpacity, Alert, TextInput, } from 'react-native';
+import { StyleSheet, Text, View, Button, Linking, Dimensions, TouchableOpacity, Alert, TextInput, Share } from 'react-native';
 import { BarCodeScanner } from "expo-barcode-scanner";
 // import Clipboard from "@react-native-clipboard/clipboard";
 // import { URL } from "url";
@@ -35,11 +35,6 @@ export default function Scanner(){
     function setResult (text) {
         setScannedText(text)
         console.info(text)
-      };
-    
-      const fetchCopiedText = async () => {
-        const text = await Clipboard.getString();
-        setCopiedText(text);
       };
 
     const handleBarCodeScanned = ({type, data}) => {
@@ -85,19 +80,26 @@ export default function Scanner(){
             {scanned && (
                 <View>
                     <TextInput
-                        editable={false}
                         style={styles.result}
                         placeholder="Result"
                         value={scannedText}
-                        onChangeText={(text) => setScannedText(text)}
+                        showSoftInputOnFocus={false}
                     ></TextInput>
                     <TouchableOpacity style={styles.rescan}>
                         <Button
                             color="#007AFF"
                             title="Rescan"
-                            onPress={() => setScanned(false)}
+                            onPress={() => {
+                                setScanned(false);
+                            }}
                         />
                     </TouchableOpacity>
+                    <Button color="#007AFF"
+                        title="Share"
+                        onPress={() => {
+                            Share.share({message: scannedText})
+                        }}
+                    ></Button>
                 </View>
             )}
         </View>

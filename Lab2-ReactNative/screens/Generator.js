@@ -15,15 +15,6 @@ export default function Generator() {
 
     const styles = getStyles(qrValue);
 
-    const copyToClipboard = () => {
-        ClipboardStatic.setString("hello world");
-    };
-
-    const fetchCopiedText = async () => {
-        const text = await ClipboardStatic.getString();
-        setCopiedText(text);
-    };
-
     return (
         <View style={styles.container}>
             <QRCode
